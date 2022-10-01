@@ -1,3 +1,5 @@
+import MeetupList from '../components/meetup/MeetupList'
+
 const MEETUPS_DATA = [
   {
     id: 'm1',
@@ -5,7 +7,7 @@ const MEETUPS_DATA = [
     image:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
     address: 'Meetupstreet 5, 12345 Meetup City',
-    description:
+    desc:
       'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
   },
   {
@@ -14,7 +16,7 @@ const MEETUPS_DATA = [
     image:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
     address: 'Meetupstreet 5, 12345 Meetup City',
-    description:
+    desc:
       'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
   }
 ]
@@ -22,11 +24,7 @@ const MEETUPS_DATA = [
 function AllMeetupsPage() {
   return <section>
     <h1>All Meetups</h1>
-    <ul>
-      {MEETUPS_DATA.map((meetup) => {
-      return <li key={meetup.id}>{meetup.title}</li>
-    })}
-    </ul>
+    <MeetupList meetups={MEETUPS_DATA}/>
   </section>
 }
 
