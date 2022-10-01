@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "react-router-dom": "^6.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
